@@ -42,8 +42,7 @@ def fix_string(string) -> str:
         in_word = re.findall(regex, string)
 
         for x in in_word:
-            a = x[:1];
-            b = x[3:4]
+            a = x[:1]; b = x[3:4]
             string = string.replace(x, a + '-' + b)
 
     for item in in_sentences:
